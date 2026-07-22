@@ -8,7 +8,11 @@ export default function Footer() {
     <footer className="mt-20 bg-navy text-white/80">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 md:grid-cols-4">
         <div>
-          <div className="text-lg font-bold text-white">{site.name}</div>
+          <div className="flex items-center gap-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={site.logo} alt={site.name} className="h-8 w-auto rounded object-contain" />
+            <span className="text-lg font-bold text-white">{site.name}</span>
+          </div>
           <p className="mt-2 text-sm">{site.tagline}</p>
         </div>
         <div>

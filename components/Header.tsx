@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Flame, Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 import { site } from "@/data/site";
 
 const nav = [
@@ -16,8 +16,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-navy text-white">
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3">
-        <Link href="/" className="flex items-center gap-2 font-bold">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-accent"><Flame size={18} /></span>
+        <Link href="/" className="flex items-center gap-2.5 font-bold">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={site.logo} alt={site.name} className="h-9 w-auto rounded object-contain" />
           <span className="text-lg">{site.name}</span>
         </Link>
         <nav className="ml-auto hidden gap-6 md:flex">
