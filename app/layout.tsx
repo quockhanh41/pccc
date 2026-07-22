@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import FloatingContact from "@/components/FloatingContact";
 
 const plexSans = IBM_Plex_Sans({
   subsets: ["latin", "vietnamese"],
@@ -23,7 +26,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi" className={`${plexSans.variable} ${jetbrains.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main className="mx-auto min-h-[60vh] max-w-6xl px-4">{children}</main>
+        <Footer />
+        <FloatingContact />
+      </body>
     </html>
   );
 }
