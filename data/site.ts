@@ -4,7 +4,7 @@ export const site = {
   description:
     "Cung cấp thiết bị phòng cháy chữa cháy đạt chuẩn, kiểm định đầy đủ: bình chữa cháy, thiết bị báo cháy, vòi & lăng chữa cháy, trang phục bảo hộ, đèn & biển báo thoát hiểm.",
   url: "https://pccc-pro.vercel.app",
-  logo: "/image/logo.png",
+  logo: "/images/logo.png",
   phone: "0789 686 363",
   phoneDigits: "0789686363",
   zalo: "https://zalo.me/0789686363",
