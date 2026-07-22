@@ -1,4 +1,5 @@
 import SectionHeading from "@/components/SectionHeading";
+import StoreGallery from "@/components/StoreGallery";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ServicesStrip from "@/components/ServicesStrip";
 import CtaSection from "@/components/CtaSection";
@@ -37,6 +38,12 @@ export default function AboutPage() {
           </div>
         ))}
       </div>
+
+      <section className="mt-16">
+        <SectionHeading eyebrow="Không gian" title="Cửa hàng của chúng tôi"
+          subtitle="Showroom & kho thiết bị PCCC — ghé thăm để được tư vấn trực tiếp." />
+        <div className="mt-8"><StoreGallery /></div>
+      </section>
 
       <section className="mt-16">
         <SectionHeading eyebrow="Cam kết" title="Vì sao chọn chúng tôi" />
