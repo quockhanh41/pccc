@@ -1,4 +1,6 @@
 import SectionHeading from "@/components/SectionHeading";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import ServicesStrip from "@/components/ServicesStrip";
 import CtaSection from "@/components/CtaSection";
 import { site } from "@/data/site";
 
@@ -25,10 +27,6 @@ export default function AboutPage() {
           thiết bị đạt chuẩn, thi công lắp đặt đến bảo trì và nạp sạc định kỳ — cam kết an toàn và
           tuân thủ quy định pháp luật về PCCC.
         </p>
-        <p className="rounded-lg bg-surface-alt p-4 text-sm text-muted">
-          Đây là nội dung demo. Thay bằng câu chuyện, giấy phép và hình ảnh thật của doanh nghiệp
-          trong <code className="font-mono">data/site.ts</code> và trang này.
-        </p>
       </div>
 
       <div className="mx-auto mt-10 grid max-w-3xl gap-5 sm:grid-cols-3">
@@ -39,6 +37,16 @@ export default function AboutPage() {
           </div>
         ))}
       </div>
+
+      <section className="mt-16">
+        <SectionHeading eyebrow="Cam kết" title="Vì sao chọn chúng tôi" />
+        <div className="mt-8"><WhyChooseUs /></div>
+      </section>
+
+      <section className="mt-16">
+        <SectionHeading eyebrow="Dịch vụ" title="Trọn gói giải pháp PCCC" subtitle="Tư vấn – thi công – bảo trì – nạp sạc bình chữa cháy." />
+        <div className="mt-8"><ServicesStrip /></div>
+      </section>
 
       <CtaSection />
     </div>
