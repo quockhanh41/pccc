@@ -86,7 +86,7 @@ export const products: Product[] = [
   },
   {
     id: "p09", slug: "quan-ao-chong-chay-trang-bac", name: "Quần áo chống cháy tráng bạc",
-    category: "bao-ho", image: "/image/Bộ-quần-áo-tráng-bạc-KTFS1000-Korea-7kg-.1.jpg", featured: true,
+    category: "bao-ho", image: "/image/quan-ao-trang-bac-ktfs1000.jpg", featured: true,
     shortDesc: "Bộ chống cháy tráng bạc phản nhiệt, bảo vệ khi tiếp cận đám cháy.",
     specs: [{ label: "Chất liệu", value: "Sợi thủy tinh tráng bạc" }, { label: "Chịu nhiệt", value: "~1000 °C bức xạ" }, { label: "Bộ gồm", value: "Áo, quần, mũ, găng, ủng" }],
   },
