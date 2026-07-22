@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 import { products } from "@/data/products";
+import { site } from "@/data/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://pccc-pro.vercel.app";
+  const base = site.url;
   const staticPages = ["", "/san-pham", "/gioi-thieu", "/lien-he"].map((path) => ({
     url: `${base}${path}`,
     lastModified: new Date(),

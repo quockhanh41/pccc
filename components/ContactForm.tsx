@@ -21,7 +21,7 @@ export default function ContactForm() {
     } catch { setStatus("error"); }
   }
 
-  const field = "w-full rounded-md border border-line px-3 py-2 outline-none transition focus:border-accent";
+  const field = "w-full rounded-md border border-line px-3 py-2 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/30";
 
   return (
     <form onSubmit={onSubmit} className="space-y-4">
@@ -41,12 +41,19 @@ export default function ContactForm() {
               className="cursor-pointer rounded-md bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-dark disabled:opacity-60">
         {status === "sending" ? "Đang gửi..." : "Gửi yêu cầu"}
       </button>
-      {status === "ok" && <p className="text-sm font-medium text-green-600">Đã gửi! Chúng tôi sẽ liên hệ lại sớm.</p>}
-      {status === "error" && (
-        <p className="text-sm font-medium text-accent">
-          Gửi chưa được. Vui lòng gọi {site.phone} hoặc kiểm tra lại Formspree endpoint trong data/site.ts.
-        </p>
-      )}
+
+      <div aria-live="polite" className="mt-2">
+        {status === "ok" && (
+          <p className="rounded-md bg-surface-alt p-3 text-sm font-semibold text-navy border border-line">
+            ✓ Đã gửi yêu cầu thành công! Chúng tôi sẽ liên hệ lại sớm.
+          </p>
+        )}
+        {status === "error" && (
+          <p className="rounded-md bg-accent/10 p-3 text-sm font-medium text-accent border border-accent/20">
+            Gửi chưa thành công. Vui lòng gọi trực tiếp hotline {site.phone} để được hỗ trợ nhanh nhất.
+          </p>
+        )}
+      </div>
     </form>
   );
 }

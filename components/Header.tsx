@@ -31,7 +31,7 @@ export default function Header() {
            className="ml-4 hidden items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-semibold transition hover:bg-accent-dark md:inline-flex">
           <Phone size={16} /> {site.phone}
         </a>
-        <button aria-label="Mở menu" onClick={() => setOpen((v) => !v)}
+        <button aria-label={open ? "Đóng menu" : "Mở menu"} aria-expanded={open} onClick={() => setOpen((v) => !v)}
                 className="ml-auto cursor-pointer md:hidden">
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>

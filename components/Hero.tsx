@@ -5,7 +5,7 @@ import DataPlate from "./DataPlate";
 
 const plateRows = [
   { label: "Tiêu chuẩn", value: "TCVN 7026" },
-  { label: "Kiểm định", value: "✓ Đầy đủ" },
+  { label: "Kiểm định", value: "Đầy đủ" },
   { label: "Giao hàng", value: "Toàn quốc" },
   { label: "Kinh nghiệm", value: "10+ năm" },
 ];
