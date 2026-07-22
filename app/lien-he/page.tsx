@@ -4,8 +4,8 @@ import SectionHeading from "@/components/SectionHeading";
 import { site } from "@/data/site";
 
 export const metadata = {
-  title: "Liên hệ — PCCC PRO",
-  description: "Liên hệ PCCC PRO: gọi điện, Zalo, Facebook hoặc để lại thông tin để nhận báo giá thiết bị phòng cháy chữa cháy.",
+  title: `Liên hệ — ${site.name}`,
+  description: `Liên hệ ${site.name}: gọi điện, Zalo, Facebook hoặc để lại thông tin để nhận báo giá thiết bị phòng cháy chữa cháy.`,
 };
 
 function FacebookIcon({ size = 18, className = "" }: { size?: number; className?: string }) {
@@ -29,11 +29,19 @@ export default function ContactPage() {
             <li className="flex items-center gap-3"><MessageCircle size={18} className="text-accent" /><a href={site.zalo} className="hover:text-accent">Chat Zalo</a></li>
             <li className="flex items-center gap-3"><FacebookIcon size={18} className="text-accent" /><a href={site.facebook} className="hover:text-accent">Facebook</a></li>
             <li className="flex items-center gap-3"><Mail size={18} className="text-accent" /><a href={`mailto:${site.email}`} className="hover:text-accent">{site.email}</a></li>
-            <li className="flex items-start gap-3"><MapPin size={18} className="mt-0.5 shrink-0 text-accent" />{site.address}</li>
+            <li className="flex items-start gap-3">
+              <MapPin size={18} className="mt-0.5 shrink-0 text-accent" />
+              <a href={site.mapUrl} target="_blank" rel="noopener noreferrer" className="font-medium hover:text-accent">
+                {site.address}
+              </a>
+            </li>
           </ul>
           <div className="mt-6 overflow-hidden rounded-lg border border-line">
-            <iframe src={site.mapEmbedUrl} className="h-64 w-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Bản đồ" />
+            <iframe src={site.mapEmbedUrl} className="h-64 w-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Bản đồ Google Maps" />
           </div>
+          <a href={site.mapUrl} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-accent hover:underline">
+            Xem chỉ đường trên Google Maps →
+          </a>
         </div>
 
         <div className="rounded-xl border border-line p-6">
