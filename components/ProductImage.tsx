@@ -1,5 +1,6 @@
-// Placeholder ảnh: khối gradient suy ra từ tên. Khi có ảnh thật, thả file vào
-// /public/images/products/ rồi thay bằng next/image dùng product.image (xem README).
+"use client";
+import { useState } from "react";
+
 const palette = ["#0F2A47", "#14335a", "#B8341F", "#334155", "#1e3a5f", "#3f4b5a"];
 
 function hash(str: string): number {
@@ -8,8 +9,24 @@ function hash(str: string): number {
   return Math.abs(h);
 }
 
-export default function ProductImage({ name, className = "" }: { name: string; className?: string }) {
+export default function ProductImage({ name, image, className = "" }: { name: string; image?: string; className?: string }) {
+  const [error, setError] = useState(false);
   const bg = palette[hash(name) % palette.length];
+
+  if (image && !error) {
+    return (
+      <div className={`relative overflow-hidden bg-surface-alt ${className}`}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={image}
+          alt={name}
+          onError={() => setError(true)}
+          className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+        />
+      </div>
+    );
+  }
+
   return (
     <div
       className={`flex items-end justify-start p-3 text-white ${className}`}

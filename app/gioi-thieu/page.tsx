@@ -3,8 +3,8 @@ import CtaSection from "@/components/CtaSection";
 import { site } from "@/data/site";
 
 export const metadata = {
-  title: "Giới thiệu — PCCC PRO",
-  description: "Về PCCC PRO: năng lực cung cấp, thi công và bảo trì thiết bị phòng cháy chữa cháy đạt chuẩn.",
+  title: `Giới thiệu — ${site.name}`,
+  description: `Về ${site.name}: năng lực cung cấp, thi công và bảo trì thiết bị phòng cháy chữa cháy đạt chuẩn.`,
 };
 
 const stats = [

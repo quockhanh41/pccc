@@ -21,14 +21,14 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: "PCCC PRO — Thiết bị phòng cháy chữa cháy", template: "%s" },
+  title: { default: `${site.name} — Thiết bị phòng cháy chữa cháy`, template: "%s" },
   description:
     "Cung cấp thiết bị phòng cháy chữa cháy đạt chuẩn: bình chữa cháy, thiết bị báo cháy, vòi & lăng chữa cháy, bảo hộ, đèn thoát hiểm.",
   openGraph: {
     type: "website",
     locale: "vi_VN",
     siteName: site.name,
-    title: "PCCC PRO — Thiết bị phòng cháy chữa cháy",
+    title: `${site.name} — Thiết bị phòng cháy chữa cháy`,
     description: "Thiết bị PCCC đạt chuẩn, kiểm định đầy đủ. Tư vấn – cung cấp – thi công – bảo trì.",
     url: site.url,
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: site.name }],

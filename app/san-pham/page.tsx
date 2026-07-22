@@ -1,9 +1,10 @@
 import SectionHeading from "@/components/SectionHeading";
 import CategoryFilter from "@/components/CategoryFilter";
 import { products, categories, type CategorySlug } from "@/data/products";
+import { site } from "@/data/site";
 
 export const metadata = {
-  title: "Sản phẩm — PCCC PRO",
+  title: `Sản phẩm — ${site.name}`,
   description: "Danh mục thiết bị phòng cháy chữa cháy: bình chữa cháy, thiết bị báo cháy, vòi & lăng, bảo hộ, đèn thoát hiểm.",
 };
 

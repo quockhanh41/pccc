@@ -14,7 +14,7 @@ export default function ProductCard({ product }: { product: Product }) {
           Tiêu biểu
         </span>
       )}
-      <ProductImage name={product.name} className="aspect-[4/3] w-full" />
+      <ProductImage name={product.name} image={product.image} className="aspect-[4/3] w-full" />
       <div className="flex flex-1 flex-col p-4">
         <h3 className="font-semibold text-navy transition group-hover:text-accent">{product.name}</h3>
         <p className="mt-1 line-clamp-2 text-sm text-muted">{product.shortDesc}</p>

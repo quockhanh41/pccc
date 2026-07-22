@@ -15,9 +15,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
-  if (!product) return { title: "Không tìm thấy sản phẩm — PCCC PRO" };
+  if (!product) return { title: `Không tìm thấy sản phẩm — ${site.name}` };
   return {
-    title: `${product.name} — PCCC PRO`,
+    title: `${product.name} — ${site.name}`,
     description: product.shortDesc,
     openGraph: { title: product.name, description: product.shortDesc },
   };
@@ -40,7 +40,7 @@ export default async function ProductDetail({ params }: { params: Promise<{ slug
       </nav>
 
       <div className="mt-6 grid gap-8 md:grid-cols-2">
-        <ProductImage name={product.name} className="aspect-[4/3] w-full rounded-xl" />
+        <ProductImage name={product.name} image={product.image} className="aspect-[4/3] w-full rounded-xl" />
         <div>
           <h1 className="text-2xl font-bold text-navy sm:text-3xl">{product.name}</h1>
           <p className="mt-3 text-body">{product.shortDesc}</p>

@@ -1,5 +1,5 @@
 export const site = {
-  name: "PCCC PRO",
+  name: "PCCC Bình An",
   tagline: "Chuyên gia thiết bị an toàn cháy nổ",
   description:
     "Cung cấp thiết bị phòng cháy chữa cháy đạt chuẩn, kiểm định đầy đủ: bình chữa cháy, thiết bị báo cháy, vòi & lăng chữa cháy, trang phục bảo hộ, đèn & biển báo thoát hiểm.",
