@@ -6,7 +6,8 @@ import ImageLightbox from "./ImageLightbox";
 
 // Ảnh cửa hàng/showroom.
 const photos = [
-  { src: "/images/store/cua-hang-1.png", alt: "Mặt tiền cửa hàng PCCC Bình An" },
+  { src: "/images/store/cua-hang-1.png", alt: "Mặt tiền cửa hàng PCCC Bình An (Góc 1)" },
+  { src: "/images/store/cua-hang-1_2.png", alt: "Mặt tiền cửa hàng PCCC Bình An (Góc 2)" },
   { src: "/images/store/cua-hang-2.png", alt: "Khu trưng bày bình chữa cháy" },
   { src: "/images/store/cua-hang-3.png", alt: "Kho thiết bị báo cháy" },
   { src: "/images/store/cua-hang-4.jpg", alt: "Khu tư vấn khách hàng" },
