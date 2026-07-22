@@ -1,0 +1,33 @@
+# Brainstorm scratch (visual companion) — không commit
+.superpowers/
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# Next.js build
+/.next/
+/out/
+/build
+next-env.d.ts
+
+# Môi trường
+.env
+.env*.local
+
+# Log & OS
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
