@@ -44,7 +44,7 @@ export const products: Product[] = [
   },
   {
     id: "p02", slug: "binh-co2-mt3-3kg", name: "Bình chữa cháy CO2 MT3 (3kg)",
-    category: "binh-chua-chay", image: "/image/binh-co2-mt3.jpg", featured: false,
+    category: "binh-chua-chay", image: "/image/binh-chua-chay-3kg-co2.jpg", featured: false,
     shortDesc: "Bình khí CO2 3kg, không để lại cặn, lý tưởng cho thiết bị điện tử, phòng máy.",
     specs: [{ label: "Chất chữa cháy", value: "Khí CO2" }, { label: "Trọng lượng", value: "3 kg" }, { label: "Ứng dụng", value: "Phòng server, tủ điện" }],
   },
@@ -62,13 +62,13 @@ export const products: Product[] = [
   },
   {
     id: "p05", slug: "dau-bao-nhiet-gia-tang", name: "Đầu báo nhiệt gia tăng",
-    category: "thiet-bi-bao-chay", image: "/image/dau-bao-nhiet.jpg", featured: false,
+    category: "thiet-bi-bao-chay", image: "/image/pro_137569400044-500x480.jpg", featured: false,
     shortDesc: "Kích hoạt khi nhiệt độ tăng nhanh bất thường, hợp nhà bếp, gara.",
     specs: [{ label: "Ngưỡng", value: "57–60 °C" }, { label: "Kiểu", value: "Gia tăng + cố định" }, { label: "Vùng bảo vệ", value: "~40 m2" }],
   },
   {
     id: "p06", slug: "tu-trung-tam-bao-chay-5-kenh", name: "Tủ trung tâm báo cháy 5 kênh",
-    category: "thiet-bi-bao-chay", image: "/image/tu-trung-tam.jpg", featured: false,
+    category: "thiet-bi-bao-chay", image: "/image/tu-trung-tam-bao-chay-5-kenh-yunyang-yf1-0005l-1.jpg", featured: false,
     shortDesc: "Trung tâm điều khiển 5 kênh (zone), hiển thị và cảnh báo sự cố tức thời.",
     specs: [{ label: "Số kênh", value: "5 zone" }, { label: "Nguồn", value: "220VAC + ắc quy" }, { label: "Ngõ ra", value: "Còi, đèn, relay" }],
   },
@@ -80,7 +80,7 @@ export const products: Product[] = [
   },
   {
     id: "p08", slug: "lang-phun-chua-chay-d50", name: "Lăng phun chữa cháy D50",
-    category: "voi-lang-chua-chay", image: "/image/lang-phun-d50.jpg", featured: false,
+    category: "voi-lang-chua-chay", image: "/image/lang-phun-chua-chay-d50_09ee39fa08604f44bcfce68aafb068c4_1024x1024.webp", featured: false,
     shortDesc: "Lăng phun hợp kim D50, tia thẳng và tia sương, khớp nối tiêu chuẩn.",
     specs: [{ label: "Đường kính", value: "D50" }, { label: "Chất liệu", value: "Hợp kim nhôm" }, { label: "Kiểu tia", value: "Thẳng / sương" }],
   },
@@ -92,7 +92,7 @@ export const products: Product[] = [
   },
   {
     id: "p10", slug: "mat-na-phong-doc-loc-khoi", name: "Mặt nạ phòng độc lọc khói",
-    category: "bao-ho", image: "/image/mat-na-loc-khoi.jpg", featured: false,
+    category: "bao-ho", image: "/image/mat-na-phong-doc-np306-a3_1717404673.jpeg", featured: false,
     shortDesc: "Mặt nạ trùm đầu lọc khói độc, hỗ trợ thoát hiểm an toàn khi có cháy.",
     specs: [{ label: "Thời gian dùng", value: "~30–60 phút" }, { label: "Lọc", value: "CO, khói, khí độc" }, { label: "Kiểu", value: "Trùm đầu" }],
   },
@@ -104,7 +104,7 @@ export const products: Product[] = [
   },
   {
     id: "p12", slug: "den-su-co-chieu-sang-khan-cap", name: "Đèn sự cố chiếu sáng khẩn cấp",
-    category: "den-bien-thoat-hiem", image: "/image/den-su-co.jpg", featured: false,
+    category: "den-bien-thoat-hiem", image: "/image/den-sac-khan-cap-Kentom-KT-402-jpg.webp", featured: false,
     shortDesc: "Tự động bật chiếu sáng lối đi khi mất điện, hỗ trợ thoát nạn.",
     specs: [{ label: "Công suất", value: "2 x 3W LED" }, { label: "Pin dự phòng", value: "≥ 2 giờ" }, { label: "Lắp đặt", value: "Gắn tường" }],
   },
