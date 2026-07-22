@@ -47,8 +47,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }).replace(/</g, "\\u003c");
 
   return (
-    <html lang="vi" className={`${plexSans.variable} ${jetbrains.variable}`}>
-      <body>
+    <html lang="vi" className={`${plexSans.variable} ${jetbrains.variable}`} suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: jsonLd }}
