@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
+import { site } from "@/data/site";
 
 const plexSans = IBM_Plex_Sans({
   subsets: ["latin", "vietnamese"],
@@ -19,14 +20,37 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PCCC PRO — Thiết bị phòng cháy chữa cháy",
-  description: "Placeholder — cập nhật ở Task 10.",
+  metadataBase: new URL("https://pccc-pro.vercel.app"),
+  title: { default: "PCCC PRO — Thiết bị phòng cháy chữa cháy", template: "%s — PCCC PRO" },
+  description:
+    "Cung cấp thiết bị phòng cháy chữa cháy đạt chuẩn: bình chữa cháy, thiết bị báo cháy, vòi & lăng chữa cháy, bảo hộ, đèn thoát hiểm.",
+  openGraph: {
+    type: "website",
+    locale: "vi_VN",
+    siteName: "PCCC PRO",
+    title: "PCCC PRO — Thiết bị phòng cháy chữa cháy",
+    description: "Thiết bị PCCC đạt chuẩn, kiểm định đầy đủ. Tư vấn – cung cấp – thi công – bảo trì.",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi" className={`${plexSans.variable} ${jetbrains.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: site.name,
+              description: site.description,
+              telephone: site.phoneDigits,
+              email: site.email,
+              address: { "@type": "PostalAddress", streetAddress: site.address },
+            }),
+          }}
+        />
         <Header />
         <main className="mx-auto min-h-[60vh] max-w-6xl px-4">{children}</main>
         <Footer />
